@@ -21,3 +21,6 @@ Test -
     6. To test this, please make any changes to the 'pass_mandrill'. The program will mention Mandrill has failed
     and then call Mailgun.
 
+P.S - Altering 'user_mandrill' alone will not fail the service. This is a bug in their service. Even the wrong username
+with a "correct" password sends the emails. Also, while sending emails to multiple people, Mandrill shows the emails of
+all the users in CC by default. This is not the case with Mailgun.
